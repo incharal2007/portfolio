@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -39,7 +37,7 @@
 
         nav {
             display: flex;
-            gap: 25px;
+            gap: 22px;
             flex-wrap: wrap;
         }
 
@@ -51,7 +49,7 @@
         }
 
         nav a:hover {
-            color: #2864f0;
+            color: #050a16;
         }
 
         .hire {
@@ -75,7 +73,7 @@
         }
 
         .eyebrow {
-            color: #2864f0;
+            color: #021031;
             font-family: monospace;
             font-size: 12px;
             letter-spacing: 2px;
@@ -113,7 +111,7 @@
         }
 
         .currently span {
-            color: #2864f0;
+            color: #00040e;
         }
 
         .scroll {
@@ -134,7 +132,7 @@
         }
 
         .section-label {
-            color: #2864f0;
+            color: #032167;
             font-family: monospace;
             font-size: 11px;
             letter-spacing: 1px;
@@ -186,7 +184,7 @@
         }
 
         .education-year {
-            color: #2864f0;
+            color: #203461;
             font-family: monospace;
             font-size: 11px;
             line-height: 1.8;
@@ -222,7 +220,7 @@
             font-size: 11px;
             font-weight: normal;
             letter-spacing: 1px;
-            color: #2864f0;
+            color: #000511;
             margin-bottom: 20px;
         }
 
@@ -254,7 +252,7 @@
         }
 
         .project-number {
-            color: #2864f0;
+            color: #2e3f65;
             font-family: monospace;
             font-size: 11px;
         }
@@ -297,6 +295,113 @@
             font-size: 10px;
             color: #888;
             margin-top: 30px;
+        }
+
+        /* CONTACT */
+        .contact-intro {
+            margin-bottom: 35px;
+        }
+
+        .contact-email {
+            display: inline-block;
+            color: #171717;
+            font-size: clamp(22px, 3.5vw, 38px);
+            letter-spacing: -1px;
+            text-decoration: none;
+            border-bottom: 1px solid #2f416a;
+            padding-bottom: 8px;
+            overflow-wrap: anywhere;
+        }
+
+        .contact-email:hover {
+            color: #2c4275;
+        }
+
+        .social-links {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            margin-top: 35px;
+            padding: 25px 0;
+            border-top: 1px solid #dededb;
+            border-bottom: 1px solid #dededb;
+        }
+
+        .social-links a {
+            color: #555;
+            font-family: monospace;
+            font-size: 11px;
+            text-decoration: none;
+        }
+
+        .social-links a:hover {
+            color: #2864f0;
+        }
+
+        /* CONTACT FORM */
+        .contact-form {
+            margin-top: 40px;
+        }
+
+        .contact-form h3 {
+            font-size: 20px;
+            font-weight: 500;
+            margin-bottom: 25px;
+        }
+
+        .form-group {
+            margin-bottom: 22px;
+        }
+
+        .form-group label {
+            display: block;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+            color: #777;
+        }
+
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 13px 0;
+            border: none;
+            border-bottom: 1px solid #dededb;
+            background: transparent;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            outline: none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+            border-bottom-color: #2864f0;
+        }
+
+        .form-group textarea {
+            resize: vertical;
+            min-height: 90px;
+        }
+
+        .send-button {
+            background: #171717;
+            color: white;
+            border: none;
+            padding: 14px 22px;
+            border-radius: 30px;
+            font-size: 12px;
+            cursor: pointer;
+        }
+
+        .send-button:hover {
+            background: #2864f0;
+        }
+
+        #form-message {
+            margin-top: 18px;
+            font-size: 13px;
+            color: #2864f0;
         }
 
         /* FOOTER */
@@ -398,9 +503,10 @@
             <a href="#education">EDUCATION</a>
             <a href="#skills">SKILLS</a>
             <a href="#work">WORK</a>
+            <a href="#contact">CONTACT</a>
         </nav>
 
-        <a href="mailto:your-email@example.com" class="hire">
+        <a href="mailto:incharal2007@gmail.com" class="hire">
             Hire me ↗
         </a>
     </header>
@@ -436,17 +542,7 @@
                 <h2>A little about me.</h2>
 
                 <p>
-                    I'm Inchara, a computer science engineering student
-                    with a background in Information Science. I'm
-                    interested in web development, thoughtful design,
-                    and creating digital solutions to real problems.
-                </p>
-
-                <p>
-                    I enjoy learning new technologies, experimenting
-                    with ideas, and turning concepts into practical
-                    projects. Outside technology, I enjoy singing,
-                    dancing, and playing badminton.
+                   I'm Inchara L, a second-year B.E. Computer Science and Engineering student at RVCE, interested in software development, full-stack engineering, and the intersection of technology and design. I enjoy building applications, exploring modern development tools, and understanding how systems work beyond the user interface. Through hands-on projects and continuous experimentation, I'm working to strengthen my engineering fundamentals and develop software that is useful, reliable, and thoughtfully designed.
                 </p>
 
                 <div class="details">
@@ -586,7 +682,6 @@
                     exploring as I continue developing my skills.
                 </p>
 
-                <!-- PROJECT 1 -->
                 <div class="project">
                     <div class="project-top">
                         <span class="project-number">01 / WEB</span>
@@ -608,7 +703,6 @@
                     </div>
                 </div>
 
-                <!-- PROJECT 2 -->
                 <div class="project">
                     <div class="project-top">
                         <span class="project-number">02 / PRODUCT</span>
@@ -631,7 +725,6 @@
                     </div>
                 </div>
 
-                <!-- PROJECT 3 -->
                 <div class="project">
                     <div class="project-top">
                         <span class="project-number">03 / TECHNOLOGY</span>
@@ -659,12 +752,87 @@
             </div>
         </section>
 
+        <!-- CONTACT -->
+        <section class="section" id="contact">
+            <div class="section-label">05 / CONTACT</div>
+
+            <div>
+                <h2>Let's connect.</h2>
+
+                <p class="contact-intro">
+                    Have an opportunity, an interesting idea, or just
+                    want to connect? Feel free to reach out.
+                </p>
+
+                <a class="contact-email"
+                   href="mailto:incharal2007@gmail.com">
+                    incharal2007@gmail.com ↗
+                </a>
+
+                <div class="social-links">
+                    <a href="https://github.com/incharal2007"
+                       target="_blank" rel="noopener noreferrer">
+                        GITHUB ↗
+                    </a>
+
+                    <a href="https://www.linkedin.com/in/inchara-l/"
+                       target="_blank" rel="noopener noreferrer">
+                        LINKEDIN ↗
+                    </a>
+                </div>
+
+                <!-- CONTACT FORM -->
+                <form class="contact-form" id="contactForm">
+                    <h3>Send a message.</h3>
+
+                    <div class="form-group">
+                        <label for="name">YOUR NAME</label>
+                        <input type="text" id="name" name="name"
+                               placeholder="Enter your name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">YOUR EMAIL</label>
+                        <input type="email" id="email" name="email"
+                               placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">YOUR MESSAGE</label>
+                        <textarea id="message" name="message"
+                                  placeholder="Write your message..."
+                                  required></textarea>
+                    </div>
+
+                    <button class="send-button" type="submit">
+                        Submit message ↗
+                    </button>
+
+                    <p id="form-message" aria-live="polite"></p>
+                </form>
+            </div>
+        </section>
+
     </main>
 
     <footer>
         <span>© 2026 INCHARA L.</span>
         <span>DESIGNED WITH INTENTION.</span>
     </footer>
+
+    <script>
+        const form = document.getElementById("contactForm");
+        const message = document.getElementById("form-message");
+
+        form.addEventListener("submit", function(event) {
+            event.preventDefault();
+
+            message.textContent =
+                "This is a demo form. No message has been sent.";
+
+            form.reset();
+        });
+    </script>
 
 </body>
 </html>
