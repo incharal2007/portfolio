@@ -1,0 +1,340 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inchara L. — Portfolio</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #fafaf8;
+            color: #171717;
+            font-family: Arial, sans-serif;
+            padding: 0 7%;
+        }
+
+        /* HEADER */
+        header {
+            height: 85px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #dededb;
+        }
+
+        .logo {
+            font-size: 14px;
+            font-weight: bold;
+            letter-spacing: 1px;
+        }
+
+        nav {
+            display: flex;
+            gap: 28px;
+        }
+
+        nav a {
+            color: #555;
+            text-decoration: none;
+            font-family: monospace;
+            font-size: 11px;
+        }
+
+        nav a:hover {
+            color: #2864f0;
+        }
+
+        .hire {
+            background: #171717;
+            color: white;
+            text-decoration: none;
+            padding: 13px 19px;
+            border-radius: 30px;
+            font-size: 12px;
+        }
+
+        /* HERO */
+        .hero {
+            min-height: 590px;
+            padding: 100px 0 70px;
+            border-bottom: 1px solid #dededb;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .eyebrow {
+            color: #2864f0;
+            font-family: monospace;
+            font-size: 12px;
+            letter-spacing: 2px;
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 8.5vw, 112px);
+            font-weight: 700;
+            letter-spacing: -6px;
+            line-height: 0.95;
+            text-transform: uppercase;
+            max-width: 1000px;
+        }
+
+        .hero-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            gap: 40px;
+            margin-top: 45px;
+        }
+
+        .intro {
+            max-width: 440px;
+            color: #686868;
+            font-size: 15px;
+            line-height: 1.8;
+        }
+
+        .currently {
+            font-family: monospace;
+            font-size: 12px;
+            white-space: nowrap;
+        }
+
+        .currently span {
+            color: #2864f0;
+        }
+
+        .scroll {
+            margin-top: 65px;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 2px;
+            color: #777;
+        }
+
+        /* ABOUT */
+        .about {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 70px;
+            padding: 100px 0;
+            border-bottom: 1px solid #dededb;
+        }
+
+        .section-label {
+            color: #2864f0;
+            font-family: monospace;
+            font-size: 11px;
+            letter-spacing: 1px;
+        }
+
+        .about h2 {
+            font-size: clamp(32px, 4vw, 48px);
+            letter-spacing: -2px;
+            margin-bottom: 30px;
+        }
+
+        .about p {
+            color: #686868;
+            font-size: 15px;
+            line-height: 1.9;
+            max-width: 650px;
+            margin-bottom: 18px;
+        }
+
+        .details {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 45px;
+            padding-top: 25px;
+            border-top: 1px solid #dededb;
+        }
+
+        .detail-label {
+            color: #888;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .detail-value {
+            font-size: 13px;
+        }
+
+        /* FOOTER */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 0;
+            color: #777;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        /* MOBILE */
+        @media (max-width: 750px) {
+            body {
+                padding: 0 6%;
+            }
+
+            header {
+                height: auto;
+                padding: 25px 0;
+                flex-wrap: wrap;
+                gap: 22px;
+            }
+
+            nav {
+                gap: 15px;
+                flex-wrap: wrap;
+            }
+
+            .hire {
+                display: none;
+            }
+
+            .hero {
+                min-height: 0;
+                padding: 100px 0 60px;
+            }
+
+            h1 {
+                letter-spacing: -2px;
+                line-height: 1;
+            }
+
+            .hero-bottom {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 25px;
+            }
+
+            .scroll {
+                margin-top: 45px;
+            }
+
+            .about {
+                grid-template-columns: 1fr;
+                gap: 30px;
+                padding: 70px 0;
+            }
+
+            .details {
+                gap: 20px;
+            }
+        }
+
+        @media (max-width: 400px) {
+            nav {
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 10px;
+            }
+
+            footer {
+                gap: 15px;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">INCHARA L.</div>
+
+        <nav>
+            <a href="#about">ABOUT</a>
+        </nav>
+
+        <a href="mailto:your-email@example.com" class="hire">
+            Hire me ↗
+        </a>
+    </header>
+
+    <main>
+
+        <section class="hero">
+            <div class="eyebrow">PORTFOLIO / 2026</div>
+
+            <h1>hey , I'm <br>Inchara L :)</h1>
+
+            <div class="hero-bottom">
+                <p class="intro">
+                    Computer science engineering student interested
+                    in building useful digital experiences through
+                    technology, coding, and creative problem-solving.
+                </p>
+
+                <div class="currently">
+                    Currently exploring <span>Node.js_</span>
+                </div>
+            </div>
+
+            <div class="scroll">SCROLL TO EXPLORE ↓</div>
+        </section>
+
+        <section class="about" id="about">
+
+            <div class="section-label">01 / ABOUT</div>
+
+            <div>
+                <h2>A little about me.</h2>
+
+                <p>
+                    I'm Inchara, a computer science engineering student
+                    with a background in Information Science. I'm
+                    interested in web development, thoughtful design,
+                    and creating digital solutions to real problems.
+                </p>
+
+                <p>
+                    I enjoy learning new technologies, experimenting
+                    with ideas, and turning concepts into practical
+                    projects. Outside technology, I enjoy singing,
+                    dancing, and playing badminton.
+                </p>
+
+                <div class="details">
+                    <div>
+                        <div class="detail-label">EDUCATION</div>
+                        <div class="detail-value">
+                            Computer Science Engineering
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="detail-label">INTERESTS</div>
+                        <div class="detail-value">
+                            Development / Design / Technology
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <span>© 2026 INCHARA L.</span>
+        <span>DESIGNED WITH INTENTION.</span>
+    </footer>
+
+</body>
+</html>
+
