@@ -1,5 +1,4 @@
-
-
+git add portfolio.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -211,6 +210,38 @@
             margin-top: 12px;
         }
 
+        /* SKILLS */
+        .skills-intro {
+            margin-bottom: 35px;
+        }
+
+        .skill-group {
+            padding: 25px 0;
+            border-top: 1px solid #dededb;
+        }
+
+        .skill-group h3 {
+            font-family: monospace;
+            font-size: 11px;
+            font-weight: normal;
+            letter-spacing: 1px;
+            color: #2864f0;
+            margin-bottom: 20px;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-list span {
+            border: 1px solid #dededb;
+            padding: 10px 14px;
+            font-size: 13px;
+            color: #333;
+        }
+
         /* FOOTER */
         footer {
             display: flex;
@@ -308,6 +339,7 @@
         <nav>
             <a href="#about">ABOUT</a>
             <a href="#education">EDUCATION</a>
+            <a href="#skills">SKILLS</a>
         </nav>
 
         <a href="mailto:your-email@example.com" class="hire">
@@ -448,6 +480,61 @@
                         <div class="education-type">
                             SECONDARY EDUCATION
                         </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="section" id="skills">
+
+            <div class="section-label">03 / SKILLS</div>
+
+            <div>
+                <h2>Things I work with.</h2>
+
+                <p class="skills-intro">
+                    Technologies and tools I use to build projects,
+                    explore ideas, and continue growing as a developer.
+                </p>
+
+                <!-- CORE COMPETENCIES -->
+                <div class="skill-group">
+                    <h3>01 / CORE COMPETENCIES</h3>
+
+                    <div class="skill-list">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                        <span>React.js</span>
+                        <span>Python</span>
+                        <span>Java</span>
+                    </div>
+                </div>
+
+                <!-- CURRENTLY EXPLORING -->
+                <div class="skill-group">
+                    <h3>02 / CURRENTLY EXPLORING</h3>
+
+                    <div class="skill-list">
+                        <span>Node.js</span>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                        <span>Data Structures</span>
+                    </div>
+                </div>
+
+                <!-- TOOLS AND PLATFORMS -->
+                <div class="skill-group">
+                    <h3>03 / TOOLS & PLATFORMS</h3>
+
+                    <div class="skill-list">
+                        <span>Git</span>
+                        <span>GitHub</span>
+                        <span>VS Code</span>
+                        <span>Figma</span>
+                        <span>Postman</span>
                     </div>
                 </div>
 
