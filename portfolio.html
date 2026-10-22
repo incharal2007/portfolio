@@ -1,4 +1,5 @@
 
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,11 +23,12 @@
 
         /* HEADER */
         header {
-            height: 85px;
+            min-height: 85px;
             display: flex;
             justify-content: space-between;
             align-items: center;
             border-bottom: 1px solid #dededb;
+            gap: 20px;
         }
 
         .logo {
@@ -37,7 +39,8 @@
 
         nav {
             display: flex;
-            gap: 28px;
+            gap: 25px;
+            flex-wrap: wrap;
         }
 
         nav a {
@@ -58,6 +61,7 @@
             padding: 13px 19px;
             border-radius: 30px;
             font-size: 12px;
+            white-space: nowrap;
         }
 
         /* HERO */
@@ -120,13 +124,13 @@
             color: #777;
         }
 
-        /* ABOUT */
-        .about {
+        /* COMMON SECTION STYLE */
+        .section {
+            padding: 100px 0;
+            border-bottom: 1px solid #dededb;
             display: grid;
             grid-template-columns: 1fr 2fr;
             gap: 70px;
-            padding: 100px 0;
-            border-bottom: 1px solid #dededb;
         }
 
         .section-label {
@@ -136,13 +140,13 @@
             letter-spacing: 1px;
         }
 
-        .about h2 {
+        .section h2 {
             font-size: clamp(32px, 4vw, 48px);
             letter-spacing: -2px;
             margin-bottom: 30px;
         }
 
-        .about p {
+        .section p {
             color: #686868;
             font-size: 15px;
             line-height: 1.9;
@@ -150,6 +154,7 @@
             margin-bottom: 18px;
         }
 
+        /* ABOUT DETAILS */
         .details {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -171,6 +176,41 @@
             font-size: 13px;
         }
 
+        /* EDUCATION */
+        .education-item {
+            padding: 25px 0;
+            border-top: 1px solid #dededb;
+            display: grid;
+            grid-template-columns: 130px 1fr;
+            gap: 25px;
+        }
+
+        .education-year {
+            color: #2864f0;
+            font-family: monospace;
+            font-size: 11px;
+            line-height: 1.8;
+        }
+
+        .education-item h3 {
+            font-size: 19px;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .education-item p {
+            font-size: 13px;
+            margin-bottom: 0;
+        }
+
+        .education-type {
+            color: #888;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+            margin-top: 12px;
+        }
+
         /* FOOTER */
         footer {
             display: flex;
@@ -189,15 +229,12 @@
             }
 
             header {
-                height: auto;
                 padding: 25px 0;
                 flex-wrap: wrap;
-                gap: 22px;
             }
 
             nav {
                 gap: 15px;
-                flex-wrap: wrap;
             }
 
             .hire {
@@ -224,14 +261,15 @@
                 margin-top: 45px;
             }
 
-            .about {
+            .section {
                 grid-template-columns: 1fr;
                 gap: 30px;
                 padding: 70px 0;
             }
 
-            .details {
-                gap: 20px;
+            .education-item {
+                grid-template-columns: 100px 1fr;
+                gap: 15px;
             }
         }
 
@@ -244,6 +282,15 @@
                 font-size: 10px;
             }
 
+            .details {
+                gap: 15px;
+            }
+
+            .education-item {
+                grid-template-columns: 1fr;
+                gap: 10px;
+            }
+
             footer {
                 gap: 15px;
                 flex-direction: column;
@@ -254,11 +301,13 @@
 
 <body>
 
+    <!-- HEADER -->
     <header>
         <div class="logo">INCHARA L.</div>
 
         <nav>
             <a href="#about">ABOUT</a>
+            <a href="#education">EDUCATION</a>
         </nav>
 
         <a href="mailto:your-email@example.com" class="hire">
@@ -268,10 +317,11 @@
 
     <main>
 
+        <!-- HERO -->
         <section class="hero">
             <div class="eyebrow">PORTFOLIO / 2026</div>
 
-            <h1>hey , I'm <br>Inchara L :)</h1>
+            <h1>hey,i'm <br>inchara L.</h1>
 
             <div class="hero-bottom">
                 <p class="intro">
@@ -288,7 +338,8 @@
             <div class="scroll">SCROLL TO EXPLORE ↓</div>
         </section>
 
-        <section class="about" id="about">
+        <!-- ABOUT -->
+        <section class="section" id="about">
 
             <div class="section-label">01 / ABOUT</div>
 
@@ -328,6 +379,81 @@
 
         </section>
 
+        <!-- EDUCATION -->
+        <section class="section" id="education">
+
+            <div class="section-label">02 / EDUCATION</div>
+
+            <div>
+                <h2>Where I've studied.</h2>
+
+                <p>
+                    My academic journey has given me a foundation in
+                    computing, programming, and problem-solving.
+                </p>
+
+                <div class="education-item">
+                    <div class="education-year">
+                        2026 — 2029
+                    </div>
+
+                    <div>
+                        <h3>Bachelor of Engineering</h3>
+
+                        <p>
+                            Rashtreeya Vidyalaya College of Engineering
+                            (RVCE), Bengaluru.
+                        </p>
+
+                        <div class="education-type">
+                            COMPUTER SCIENCE & ENGINEERING
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">
+                        2023-2026 <br>
+                        CGPA-9.5
+                    </div>
+
+                    <div>
+                        <h3>Diploma in Information Science</h3>
+
+                        <p>
+                            Diploma studies focused on information
+                            technology, programming, and computing
+                            fundamentals.
+                        </p>
+
+                        <div class="education-type">
+                            DIPLOMA
+                        </div>
+                    </div>
+                </div>
+
+                <div class="education-item">
+                    <div class="education-year">
+                        COMPLETED
+                    </div>
+
+                    <div>
+                        <h3>10th Grade</h3>
+
+                        <p>
+                            Completed secondary schooling under the
+                            CBSE curriculum.
+                        </p>
+
+                        <div class="education-type">
+                            SECONDARY EDUCATION
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
     <footer>
@@ -337,4 +463,3 @@
 
 </body>
 </html>
-
