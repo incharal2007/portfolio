@@ -1,4 +1,5 @@
-git add portfolio.html
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -123,7 +124,7 @@ git add portfolio.html
             color: #777;
         }
 
-        /* COMMON SECTION STYLE */
+        /* COMMON SECTION */
         .section {
             padding: 100px 0;
             border-bottom: 1px solid #dededb;
@@ -153,7 +154,7 @@ git add portfolio.html
             margin-bottom: 18px;
         }
 
-        /* ABOUT DETAILS */
+        /* ABOUT */
         .details {
             display: grid;
             grid-template-columns: 1fr 1fr;
@@ -211,10 +212,6 @@ git add portfolio.html
         }
 
         /* SKILLS */
-        .skills-intro {
-            margin-bottom: 35px;
-        }
-
         .skill-group {
             padding: 25px 0;
             border-top: 1px solid #dededb;
@@ -240,6 +237,66 @@ git add portfolio.html
             padding: 10px 14px;
             font-size: 13px;
             color: #333;
+        }
+
+        /* WORK */
+        .project {
+            padding: 28px 0;
+            border-top: 1px solid #dededb;
+        }
+
+        .project-top {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 18px;
+        }
+
+        .project-number {
+            color: #2864f0;
+            font-family: monospace;
+            font-size: 11px;
+        }
+
+        .project-status {
+            color: #888;
+            font-family: monospace;
+            font-size: 10px;
+            letter-spacing: 1px;
+        }
+
+        .project h3 {
+            font-size: 25px;
+            font-weight: 500;
+            letter-spacing: -1px;
+            margin-bottom: 12px;
+        }
+
+        .project p {
+            font-size: 14px;
+            margin-bottom: 18px;
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        .project-tags span {
+            font-family: monospace;
+            font-size: 10px;
+            color: #555;
+            border: 1px solid #dededb;
+            padding: 8px 10px;
+        }
+
+        .project-note {
+            font-family: monospace;
+            font-size: 10px;
+            color: #888;
+            margin-top: 30px;
         }
 
         /* FOOTER */
@@ -340,6 +397,7 @@ git add portfolio.html
             <a href="#about">ABOUT</a>
             <a href="#education">EDUCATION</a>
             <a href="#skills">SKILLS</a>
+            <a href="#work">WORK</a>
         </nav>
 
         <a href="mailto:your-email@example.com" class="hire">
@@ -372,7 +430,6 @@ git add portfolio.html
 
         <!-- ABOUT -->
         <section class="section" id="about">
-
             <div class="section-label">01 / ABOUT</div>
 
             <div>
@@ -408,12 +465,10 @@ git add portfolio.html
                     </div>
                 </div>
             </div>
-
         </section>
 
         <!-- EDUCATION -->
         <section class="section" id="education">
-
             <div class="section-label">02 / EDUCATION</div>
 
             <div>
@@ -425,18 +480,14 @@ git add portfolio.html
                 </p>
 
                 <div class="education-item">
-                    <div class="education-year">
-                        2026 — 2029
-                    </div>
+                    <div class="education-year">2026 — 2029</div>
 
                     <div>
                         <h3>Bachelor of Engineering</h3>
-
                         <p>
                             Rashtreeya Vidyalaya College of Engineering
                             (RVCE), Bengaluru.
                         </p>
-
                         <div class="education-type">
                             COMPUTER SCIENCE & ENGINEERING
                         </div>
@@ -445,64 +496,51 @@ git add portfolio.html
 
                 <div class="education-item">
                     <div class="education-year">
-                        2023-2026 <br>
-                        CGPA-9.5
+                        2023-2026<br>CGPA-9.5
                     </div>
 
                     <div>
                         <h3>Diploma in Information Science</h3>
-
                         <p>
                             Diploma studies focused on information
                             technology, programming, and computing
                             fundamentals.
                         </p>
-
-                        <div class="education-type">
-                            DIPLOMA
-                        </div>
+                        <div class="education-type">DIPLOMA</div>
                     </div>
                 </div>
 
                 <div class="education-item">
-                    <div class="education-year">
-                        COMPLETED
-                    </div>
+                    <div class="education-year">COMPLETED</div>
 
                     <div>
                         <h3>10th Grade</h3>
-
                         <p>
                             Completed secondary schooling under the
                             CBSE curriculum.
                         </p>
-
                         <div class="education-type">
                             SECONDARY EDUCATION
                         </div>
                     </div>
                 </div>
-
             </div>
         </section>
 
         <!-- SKILLS -->
         <section class="section" id="skills">
-
             <div class="section-label">03 / SKILLS</div>
 
             <div>
                 <h2>Things I work with.</h2>
 
-                <p class="skills-intro">
+                <p>
                     Technologies and tools I use to build projects,
                     explore ideas, and continue growing as a developer.
                 </p>
 
-                <!-- CORE COMPETENCIES -->
                 <div class="skill-group">
                     <h3>01 / CORE COMPETENCIES</h3>
-
                     <div class="skill-list">
                         <span>HTML</span>
                         <span>CSS</span>
@@ -513,10 +551,8 @@ git add portfolio.html
                     </div>
                 </div>
 
-                <!-- CURRENTLY EXPLORING -->
                 <div class="skill-group">
                     <h3>02 / CURRENTLY EXPLORING</h3>
-
                     <div class="skill-list">
                         <span>Node.js</span>
                         <span>TypeScript</span>
@@ -525,10 +561,8 @@ git add portfolio.html
                     </div>
                 </div>
 
-                <!-- TOOLS AND PLATFORMS -->
                 <div class="skill-group">
                     <h3>03 / TOOLS & PLATFORMS</h3>
-
                     <div class="skill-list">
                         <span>Git</span>
                         <span>GitHub</span>
@@ -537,7 +571,91 @@ git add portfolio.html
                         <span>Postman</span>
                     </div>
                 </div>
+            </div>
+        </section>
 
+        <!-- WORK -->
+        <section class="section" id="work">
+            <div class="section-label">04 / WORK</div>
+
+            <div>
+                <h2>Selected concepts.</h2>
+
+                <p>
+                    A collection of project ideas I'm interested in
+                    exploring as I continue developing my skills.
+                </p>
+
+                <!-- PROJECT 1 -->
+                <div class="project">
+                    <div class="project-top">
+                        <span class="project-number">01 / WEB</span>
+                        <span class="project-status">CONCEPT</span>
+                    </div>
+
+                    <h3>Personal Portfolio</h3>
+
+                    <p>
+                        A personal website concept designed to present
+                        my background, skills, learning journey, and
+                        future projects in a clean, minimal layout.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>RESPONSIVE DESIGN</span>
+                    </div>
+                </div>
+
+                <!-- PROJECT 2 -->
+                <div class="project">
+                    <div class="project-top">
+                        <span class="project-number">02 / PRODUCT</span>
+                        <span class="project-status">IDEA</span>
+                    </div>
+
+                    <h3>Campus Companion</h3>
+
+                    <p>
+                        A proposed student assistant that brings
+                        frequently needed campus information,
+                        important links, and student FAQs into
+                        one accessible interface.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>UI DESIGN</span>
+                        <span>JAVASCRIPT</span>
+                        <span>RESEARCH</span>
+                    </div>
+                </div>
+
+                <!-- PROJECT 3 -->
+                <div class="project">
+                    <div class="project-top">
+                        <span class="project-number">03 / TECHNOLOGY</span>
+                        <span class="project-status">EXPLORATION</span>
+                    </div>
+
+                    <h3>Smart Learning Dashboard</h3>
+
+                    <p>
+                        A proposed dashboard for organizing study
+                        resources, tracking learning goals, and
+                        keeping academic tasks in one place.
+                    </p>
+
+                    <div class="project-tags">
+                        <span>REACT</span>
+                        <span>CSS</span>
+                        <span>UI/UX</span>
+                    </div>
+                </div>
+
+                <div class="project-note">
+                    PLACEHOLDER IDEAS — PROJECTS NOT YET IMPLEMENTED
+                </div>
             </div>
         </section>
 
